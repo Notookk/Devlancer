@@ -1,0 +1,14 @@
+/* Remove global background styles to avoid conflicts */
+button { 
+    background-color: goldenrod;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.02);
+    background-color: #388e3c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome {
+    font-family: 'Courier New', Courier, monospace;
+}

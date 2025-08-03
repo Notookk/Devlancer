@@ -1,0 +1,65 @@
+{
+  "name": "devlancer-job-portal",
+  "version": "2.0.0",
+  "description": "A comprehensive MERN stack job portal with advanced features, real-time notifications, and modern UI/UX design",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix backend run dev",
+    "server:prod": "npm --prefix backend start",
+    "client": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build",
+    "client:preview": "npm --prefix client run preview",
+    "install-deps": "npm install && npm --prefix backend install && npm --prefix client install",
+    "build": "npm --prefix client run build",
+    "test": "npm --prefix backend test && npm --prefix client test",
+    "lint": "npm --prefix backend run lint && npm --prefix client run lint",
+    "clean": "rm -rf node_modules && rm -rf backend/node_modules && rm -rf client/node_modules",
+    "reset": "npm run clean && npm run install-deps"
+  },
+  "keywords": [
+    "mern",
+    "job-portal", 
+    "react",
+    "nodejs",
+    "mongodb",
+    "express",
+    "tailwindcss",
+    "job-board",
+    "recruitment",
+    "career",
+    "employment",
+    "javascript",
+    "fullstack",
+    "web-application",
+    "responsive-design",
+    "modern-ui"
+  ],
+  "author": {
+    "name": "DevLancer Team",
+    "email": "contact@devlancer.com",
+    "url": "https://github.com/yourusername"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mern-job-portal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/mern-job-portal/issues"
+  },
+  "homepage": "https://github.com/yourusername/mern-job-portal#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "6.0.0"
+    }
+  }
+}
