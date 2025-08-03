@@ -39,11 +39,11 @@ jobs:
         with:
           node-version: '18'
 
-      # Cache node modules
-      - name: Cache node modules
+      # Cache npm dependencies
+      - name: Cache npm dependencies
         uses: actions/cache@v3
         with:
-          path: client/node_modules
+          path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('client/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
