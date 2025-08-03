@@ -18,7 +18,7 @@ import Notifications from "./pages/Notifications.jsx";
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/Devlancer">
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/simple" element={<SimpleLogin />} />
